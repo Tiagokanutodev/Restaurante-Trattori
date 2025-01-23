@@ -1,25 +1,40 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { GlobalCss } from './styles'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import styled from 'styled-components'
+import Hero from './components/Hero'
+import DishGrid from './components/DishGrid'
+import Footer from './components/Footer'
+import ImagePage from './components/ImagePage'
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GlobalCss />
+      <Container>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <DishGrid />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/image-page" element={<ImagePage />} />
+        </Routes>
+      </Container>
+    </Router>
   )
 }
 
