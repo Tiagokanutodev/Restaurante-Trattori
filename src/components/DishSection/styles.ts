@@ -36,9 +36,9 @@ export const DishButton = styled.button`
   background-color: ${cores.bege};
   color: ${cores.cenoura};
   border: none;
-  width: 304px; /* Definindo a largura */
-  height: 24px; /* Definindo a altura */
-  padding: 0; /* Removendo o padding, pois o tamanho já foi definido */
+  width: 304px;
+  height: 24px;
+  padding: 0;
   margin-top: 12px;
   cursor: pointer;
   font-size: 16px;
@@ -51,7 +51,7 @@ export const DishButton = styled.button`
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 320px); /* 3 colunas */
+  grid-template-columns: repeat(3, 320px);
   gap: 20px;
   justify-content: center;
   margin-top: 56px;

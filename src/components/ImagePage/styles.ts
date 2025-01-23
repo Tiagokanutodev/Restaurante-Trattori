@@ -10,10 +10,10 @@ export const ImagePageContainer = styled.div`
 export const Image = styled.img`
   max-width: 100%;
   height: auto;
-  margin-bottom: 0px; /* Espaço entre as imagens e a grid */
+  margin-bottom: 0px;
 `
 
 export const FooterWrapper = styled.div`
   width: 100%;
-  margin-top: 120px; /* Espaço entre a grid de pratos e o rodapé */
+  margin-top: 120px;
 `

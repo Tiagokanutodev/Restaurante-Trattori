@@ -58,7 +58,7 @@ const DishGrid: React.FC = () => {
           image={dish.image}
           description={dish.description}
           link={dish.link}
-          isFirstDish={index === 0} // Passando a condição para o primeiro prato
+          isFirstDish={index === 0}
         />
       ))}
     </GridContainer>
